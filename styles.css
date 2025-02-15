@@ -1146,6 +1146,10 @@ footer p {
 
 /* Для пристроїв з шириною до 480px */
 @media (max-width: 480px) {
+p{
+  font-size: 12px;
+}
+
   .header-container {
     width: 90%;
   }
