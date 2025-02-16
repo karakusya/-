@@ -314,9 +314,9 @@
 .icon-purple {
   position: absolute;
   bottom: 0;
-  right: -40px;
-  width: 30%;
-  height: auto;
+  right: -180px;
+ 
+
   z-index: 3;
 }
 /* Декоративні елементи */
@@ -401,7 +401,7 @@ position: relative;
   .hero-sonechko {
     margin-bottom: 30px;
   }
-  .icon-purple {
+  .hero .icon-purple {
     right: -90px;
     width: 40%;
     height: 20%;

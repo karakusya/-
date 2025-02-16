@@ -15,14 +15,14 @@
   text-align: center;
   position: relative;
   min-height: 30vh;
+  overflow: visible;
 }
 
 /* Фіолетова іконка (декоративна) */
 .contacts .icon-purple {
   position: absolute;
-top: -60px;
-left: -20px;
-  width: 80px;
+top: -75px;
+left: -100px;
  
 }
 
@@ -112,7 +112,7 @@ width: 40%;
     position: absolute;
     top: -40px;
     left: -20px;
-    width: 100px;
+   
     
   }
 }

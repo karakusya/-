@@ -111,7 +111,7 @@ left: -70px;
 .feedback .icon-pink {
   position: absolute;
   bottom: 40px;
-  width: 100px;
+
   right: -80px;
   }
 
@@ -152,7 +152,7 @@ left: -70px;
   .feedback .icon-blue,
   .feedback .icon-pink {
  position: absolute;
-    width: 60px;
+  
     height: auto;
   }
   .feedback .icon-blue {
@@ -163,7 +163,7 @@ left: -70px;
   .feedback .icon-pink {
     position: absolute;
     bottom: 20px;
-    right: -30px;
+    right: -230px;
   }
 }
 
@@ -204,7 +204,7 @@ left: -70px;
   .feedback .icon-pink {
     position: absolute;
     bottom: 100px;
-    right: -130px;
+    right: -280px;
   }
 
   /* Збільшуємо розміри декоративних квадратиків */
