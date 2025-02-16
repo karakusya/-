@@ -133,6 +133,9 @@
   .about-item {
     text-align: left;
   }
+  .about-text {
+    margin-bottom: 40px;
+  }
 }
 
 /* При ширині від 1080px */
