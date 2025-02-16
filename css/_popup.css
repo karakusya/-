@@ -1,0 +1,257 @@
+/* ===========================================
+   Mobile-first базові стилі для Popups
+=========================================== */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  transform-origin: top center;
+  position: relative;
+}
+
+.popup-content::-webkit-scrollbar {
+  display: none;
+}
+
+.popup.active .popup-content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-close {
+  position: fixed;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #6f42c1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.popup-close:hover {
+  color: #d9534f;
+}
+
+.popup-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.popup-content h4 {
+  font-size: 20px;
+  color: #6f42c1;
+  margin: 16px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-content p,
+.popup-content ul {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.popup-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.popup-content li {
+  margin-bottom: 8px;
+}
+
+.popup-subheading {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.popup-subheading span {
+  padding: 4px 8px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.abzac li{
+  width: 100%;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  list-style: square;
+}
+
+.abzac {
+  text-wrap: balance;
+
+}
+ 
+.none-list-style li {
+  list-style: none;
+}
+
+.popup-subheading {  padding-top: 30px;}
+  .popup-subheading:not(:last-of-type) {
+  
+    border-bottom: 2px solid black;
+  }
+
+  .sub-subheading span{
+
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .little-heading span {
+  list-style: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .little-heading .abzac{
+    margin-bottom: 30px;
+  }
+  .abzac  .little-heading {
+    list-style: none; }
+
+  
+/* =======================================
+   Медійні запити для пристроїв
+======================================= */
+
+/* Планшети (від 768px) */
+@media screen and (min-width: 768px) {
+  .popup {
+    padding: 20px;
+  }
+  .popup-content {
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-content h3 {
+    font-size: 32px;
+  }
+
+  .popup-content h4 {
+    font-size: 24px;
+  }
+
+  .popup-content p,
+  .popup-content ul {
+    font-size: 18px;
+  }
+
+  .popup-subheading {
+    font-size: 20px;
+  }
+  .abzac li{
+    width: 45%;}
+    .abzac {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 18px;
+      column-gap: 36px;
+      text-wrap: balance;
+    
+    }
+}
+
+
+/* Десктопи (від 1080px) */
+@media screen and (min-width: 1080px) {
+  .popup-content {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .popup-content h3 {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+
+  .popup-content h4 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
+
+  .popup-content p,
+  .popup-content ul {
+    font-size: 20px;
+  }
+
+  .popup-subheading span{
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  .popup-subheading ul{
+    margin-bottom: 50px;
+  
+  }
+
+  
+
+  .popup-close {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+  }
+
+  
+
+ 
+
+  .sub-subheading span{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .little-heading span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .little-heading .abzac{
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,215 @@
+/* ===========================================
+   Mobile-first базові стилі для секції Feedback
+=========================================== */
+
+.feedback {
+ overflow: hidden;
+
+}
+
+/* Заголовок секції */
+.feedback .section-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px; /* меншої висоти для мобільних */
+}
+
+/* Декоративне серце – для мобільних відображається в потоці */
+.feedback-heart {
+  position: absolute;
+  display: block;
+ top: -60px;
+ right: -10px;
+  width: 70px;
+ 
+}
+
+/* Контейнер коментарів – за замовчуванням 1 колонка */
+.comments-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  position: relative;
+}
+
+/* Стилізація окремого коментаря */
+.comment-item {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 1);
+  border: 2px solid #000;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Декоративні обертання для коментарів */
+.comment-item:nth-child(1) {
+  transform: rotate(-8deg) translateY(-1px);
+}
+.comment-item:nth-child(2) {
+  transform: rotate(3deg) translateY(10px);
+}
+.comment-item:nth-child(3) {
+  transform: rotate(12deg) translateY(-5px);
+}
+.comment-item:nth-child(4) {
+  transform: rotate(-11deg) translateY(12px);
+}
+.comment-item:nth-child(5) {
+  transform: rotate(7deg) translateY(-8px);
+}
+.comment-item:nth-child(6) {
+  transform: rotate(-2deg) translateY(5px);
+}
+.comment-item:nth-child(7) {
+  transform: rotate(-6deg) translateY(-12px);
+}
+
+/* Hover-ефект для коментаря */
+.comment-item:hover {
+  transform: scale(1.05) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Декоративні квадратики */
+.feedback .kvadratic {
+  width: 12px;
+  height: 12px;
+}
+
+.feedback .kvadratics-container div:nth-of-type(1) {
+  top: -6px;
+  left: -6px;
+}
+.feedback .kvadratics-container div:nth-of-type(2) {
+  top: -6px;
+  right: -6px;
+}
+.feedback .kvadratics-container div:nth-of-type(3) {
+  bottom: -6px;
+  left: -6px;
+}
+.feedback .kvadratics-container div:nth-of-type(4) {
+  bottom: -6px;
+  right: -6px;
+}
+
+/* На мобільних декоративні SVG-іконки хмар приховуємо */
+.feedback .icon-blue {
+position: absolute;
+top: -70px;
+width: 100px;
+left: -70px;
+
+}
+
+.feedback .icon-pink {
+  position: absolute;
+  bottom: 40px;
+  width: 100px;
+  right: -80px;
+  }
+
+/* ===========================================
+      Медійні запити для пристроїв
+=========================================== */
+
+/* При ширині від 768px – перехід до 2 колонок, коригування розмірів */
+@media screen and (min-width: 768px) {
+  .feedback .section-heading {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  /* Серце збільшується і позиціонується абсолютно */
+  .feedback-heart {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    margin: 0;
+  }
+
+  /* Коментарі – 2 колонки */
+  .comments-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .comment-item {
+    font-size: 18px;
+  
+ 
+    border: 3px solid #000;
+  }
+
+  /* Відображаємо декоративні SVG-іконки та позиціонуємо їх */
+  .feedback .icon-blue,
+  .feedback .icon-pink {
+ position: absolute;
+    width: 60px;
+    height: auto;
+  }
+  .feedback .icon-blue {
+    position: absolute;
+    top: 80px;
+    left: -30px;
+  }
+  .feedback .icon-pink {
+    position: absolute;
+    bottom: 20px;
+    right: -30px;
+  }
+}
+
+/* При ширині від 1080px – розширення сітки до 3 колонок та збільшення розмірів */
+@media screen and (min-width: 1080px) {
+  .feedback .section-heading {
+    font-size: 32px;
+    margin-bottom: 80px;
+  }
+
+  /* Коментарі – 3 колонки */
+  .comments-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .comment-item {
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: -9px 10px 0 rgba(0, 0, 0, 0.44);
+    border: 4px solid #000;
+  }
+
+  /* Позиціонування декоративних елементів згідно з макетом */
+  .feedback-heart {
+    width: 80px;
+    top: -80px;
+    right: 200px;
+    position: absolute;
+  }
+
+  .feedback .icon-blue {
+    position: absolute;
+    top: 1200px;
+    left: -130px;
+  }
+  
+  .feedback .icon-pink {
+    position: absolute;
+    bottom: 100px;
+    right: -130px;
+  }
+
+  /* Збільшуємо розміри декоративних квадратиків */
+  .feedback .kvadratic {
+    width: 25px;
+    height: 25px;
+  }
+}

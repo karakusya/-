@@ -1,0 +1,234 @@
+/* ===========================================
+   Mobile-first базові стилі для секції Portfolio
+=========================================== */
+
+.portfolio {
+  position: relative;
+  padding: 20px;
+}
+
+.portfolio .section-heading {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Декоративна іконка "sonechko" – для мобільної версії */
+.portfolio-sonechko {
+  display: block;
+  margin: 0 auto 20px;
+  width: 80px;
+  height: auto;
+}
+
+/* Контейнер з айтемами – на мобільних: 1 колонка */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Базова стилізація кожного айтема */
+.portfolio-item {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 1);
+  overflow: visible; /* дозволяє псевдоелементам виступати за межі */
+}
+
+/* Псевдоелементи для декоративних ліній */
+.portfolio-item::before,
+.portfolio-item::after,
+.portfolio-item .border-top,
+.portfolio-item .border-bottom {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+/* Верхня лінія */
+.portfolio-item .border-top {
+  top: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: 20px;
+  border-top: 3px solid black;
+}
+
+/* Нижня лінія */
+.portfolio-item .border-bottom {
+  bottom: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: 20px;
+  border-bottom: 3px solid black;
+}
+
+/* Ліва лінія */
+.portfolio-item::before {
+  top: -10px;
+  left: 0;
+  height: calc(100% + 20px);
+  width: 20px;
+  border-left: 3px solid black;
+}
+
+/* Права лінія */
+.portfolio-item::after {
+  top: -10px;
+  right: 0;
+  height: calc(100% + 20px);
+  width: 20px;
+  border-right: 3px solid black;
+}
+
+/* Контейнер форми айтема */
+.portfolio-shape {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: white;
+  z-index: 1;
+}
+
+/* Контейнер з фото */
+.portfolio-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Текстовий блок і стрілка */
+.portfolio-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+
+/* Контейнер для стрілки */
+.portfolio-arrow-container {
+  cursor: pointer;
+  z-index: 3;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Стилізація стрілки */
+.portfolio-arrow {
+  width: 30px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+/* Hover-ефект для стрілки */
+.portfolio-arrow:hover {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(63%) saturate(1916%) hue-rotate(265deg) brightness(1.03) contrast(1);
+}
+
+/* Overlay: покриття айтема при наведенні на стрілку */
+.portfolio-shape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #DA95EB;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* Якщо браузер підтримує :has(), overlay розгортається при ховері на стрілку */
+.portfolio-shape:has(.portfolio-arrow-container:hover)::after {
+  transform: scaleX(1);
+}
+
+
+/* =======================================
+   Медійні запити для пристроїв
+======================================= */
+
+/* При ширині від 768px – 2 колонки */
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .portfolio .section-heading {
+    font-size: 32px;
+  }
+  
+  .portfolio-title {
+    font-size: 22px;
+  }
+  
+  .portfolio-arrow {
+    width: 35px;
+  }
+}
+
+/* При ширині від 1080px – 4 колонки */
+@media screen and (min-width: 1080px) {
+  .portfolio-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .portfolio .section-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .portfolio-item {
+    width: calc(25% - 20px);
+  }
+
+  .portfolio-text {
+    gap: 10px;
+  }
+  .portfolio-title {
+    font-size: 16px;
+  }
+  
+  .portfolio-arrow {
+    width: 40px;
+  }
+  
+  /* Опціонально: регулюємо розмір фото */
+  .portfolio-image {
+    max-width: 100%;
+  }
+  
+  /* Переміщення декоративної іконки для десктопу */
+  .portfolio-sonechko {
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    transform: translateX(50%);
+    width: 80px;
+  }
+}

@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>karakusya</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>karakusya</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/_header.css">
+  <link rel="stylesheet" href="css/_hero.css">
+  <link rel="stylesheet" href="css/_about.css">
+  <link rel="stylesheet" href="css/_contact.css">
+  <link rel="stylesheet" href="css/_feedback.css">
+  <link rel="stylesheet" href="css/_portfolio.css">
+  <link rel="stylesheet" href="css/_popup.css">
+  <link rel="stylesheet" href="css/_gallery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header >
-      <svg class="icon-blue icon">
-        <use xlink:href="images/sprite.svg#vector-icon"></use>
-      </svg>
-      <svg class="icon-pink icon">
-        <use xlink:href="images/sprite.svg#vector-icon"></use>
-      </svg>
-       <div class="header-container">
-        <div class="logo icon">
-          <img src="images/logo.png" alt="" class="logo-img">
-          <span>karakusya</span>
+  <header>
+    <svg class="icon-blue icon">
+      <use xlink:href="images/sprite.svg#vector-icon"></use>
+    </svg>
+    <svg class="icon-pink icon">
+      <use xlink:href="images/sprite.svg#vector-icon"></use>
+    </svg>
+    <!-- В header ми вже використовуємо клас container -->
+    <div class="header-container ">
+      <div class="logo icon">
+        <img src="images/logo.png" alt="" class="logo-img">
+        <span>karakusya</span>
       </div>
       <nav>
-          <ul class="nav-container">
-              <li class="nav-item"><a href="#about">Про мене</a></li>
-              <li class="nav-item"><a href="#portfolio">Портфоліо</a></li>
-              <li class="nav-item"><a href="#contact">Контакти</a></li>
-          </ul>
+        <ul class="nav-container">
+          <li class="nav-item"><a href="#about">Про мене</a></li>
+          <li class="nav-item"><a href="#portfolio">Портфоліо</a></li>
+          <li class="nav-item"><a href="#contact">Контакти</a></li>
+        </ul>
       </nav>
       <div class="kvadratics-container">
         <div class="kvadratic"></div>
@@ -35,639 +44,778 @@
         <div class="kvadratic"></div>
         <div class="kvadratic"></div>
       </div>
-       </div>
-    </header>
-    <main>
-      <section class="hero">
+    </div>
+  </header>
+  
+  <main>
+    <!-- Hero секція -->
+    <section class="hero">
+      <div class="container">
         <svg class="icon-pink icon">
           <use xlink:href="images/sprite.svg#vector-icon"></use>
         </svg>
-        <div class="kusya-container icon">
-          <div class="kusya-text-frame">
-            <img src="images/smile.png" class="smile-hero" alt="">
-            <p class="kusya-text">куся</p>
-          </div>
-          <img src="images/Arrow_07.svg" alt="" class="hero-arrow">
-        </div>
+        
         <div class="hero-text-container">
-            <img src="images/sonechko.svg" alt="" class="icon hero-sonechko">
-          
-                 
+          <img src="images/sonechko.svg" alt="" class="icon hero-sonechko">
           <h1 class="hero-heading">
             Організовую івенти, <span class="highlight"> якими живу</span>
           </h1>
           <div class="button-container">
             <button class="hero-button"><a href="#portfolio">Портфоліо</a></button>
-          <button class="hero-button"><a href="files/cv karakuts (1).pdf" download="">CV</a></button>
-          <img class="hero-rysochki icon" src="images/rysochki.svg" alt="">
+            <button class="hero-button"><a href="files/cv karakuts (1).pdf" download="">CV</a></button>
+            <img class="hero-rysochki icon" src="images/rysochki.svg" alt="">
           </div>
-          
         </div>
+        
         <div class="hero-photo-container">
+          <div class="kusya-container icon">
+            <div class="kusya-text-frame">
+              <img src="images/smile.png" class="smile-hero" alt="">
+              <p class="kusya-text">куся</p>
+            </div>
+            <img src="images/Arrow_07.svg" alt="" class="hero-arrow">
+          </div>
           <div class="shape-rectangle-size7">
             <div class="border-top"></div>
-              <div class="border-bottom"></div>
-            
-            
+            <div class="border-bottom"></div>
             <div class="my-img-container">
               <img class="my-img" src="images/йа.jpg" alt="">
             </div>
-            
-            <img class="bulb-img icon" src="images/bulb.png" alt="">
-            
-            <svg class="icon-purple icon" >
-              <!-- Приклад підключення svg-спрайту -->
+            <img class="bulb-img icon" src="images/bulb.svg" alt="">
+            <svg class="icon-purple icon">
               <use xlink:href="images/sprite.svg#vector-icon"></use>
             </svg>
-            
             <div class="ellipse8"></div>
             <div class="ellipse9"></div>
-            
             <img class="smile-img icon" src="images/smile.png" alt="">
           </div>
         </div>
-      </section>
-      
-
-        <section class="about" id="about">
-            <h2 class="section-heading">Трошки про мене:</h2>
-            <img src="images/smile.png" alt="" class="icon about-smile">
-            <div class="about-container">
-          
-              <div class="about-items">
-                
-                  <div class="about-item">
-                      <img src="images/about1.png" class="about-icon icon"></img>
-                      <p>Досвід в організації івентів різних форматів: гібридні, онлайн, офлайн.</p>
-                  </div>
-                  <div class="about-item">
-                      <img src="images/about2.png" class="about-icon icon"></img>
-                      <p>Робота з великими командами та учасниками (до 600 людей).</p>
-                  </div>
-                  <div class="about-item">
-                      <img src="images/about3.png" class="about-icon icon"></img>
-                      <p>Успішна реалізація концепцій івентів, робота з декором, кейтерингом, бюджетами та логістикою.</p>
-                  </div>
-                  <div class="about-item">
-                      <img src="images/about4.png" class="about-icon icon"></img>
-                      <p>В івентах ціную цікаві, продумані до найменших деталей концепції і наявність благодійної складової.</p>
-                  </div>
+      </div>
+    </section>
+    
+    <!-- About секція -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-heading">Трошки про мене:</h2>
+        <img src="images/smile.png" alt="" class="icon about-smile">
+        <div class="about-container">
+          <div class="about-items">
+            <div class="about-item">
+              <img src="images/about1.svg" class="about-icon icon" alt="">
+              <p>Досвід в організації івентів різних форматів: гібридні, онлайн, офлайн.</p>
+            </div>
+            <div class="about-item">
+              <img src="images/about2.svg" class="about-icon icon" alt="">
+              <p>Робота з великими командами та учасниками (до 600 людей).</p>
+            </div>
+            <div class="about-item">
+              <img src="images/about3.svg" class="about-icon icon" alt="">
+              <p>Успішна реалізація концепцій івентів, робота з декором, кейтерингом, бюджетами та логістикою.</p>
+            </div>
+            <div class="about-item">
+              <img src="images/about4.svg" class="about-icon icon" alt="">
+              <p>В івентах ціную цікаві, продумані до найменших деталей концепції і наявність благодійної складової.</p>
+            </div>
+          </div>
+          <div class="kvadratics-container">
+            <div class="kvadratic"></div>
+            <div class="kvadratic"></div>
+            <div class="kvadratic"></div>
+            <div class="kvadratic"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio секція -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-heading">My Portfolio</h2>
+        <img src="images/blue-sonce.svg" alt="" class="icon portfolio-sonechko">
+        <div class="portfolio-container">
+          <!-- Перший айтем -->
+          <div class="portfolio-item item1">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+            <div class="portfolio-shape">
+              <div class="portfolio-image icon">
+                <img src="images/1.svg" alt="Фото">
               </div>
-              <div class="kvadratics-container">
-                <div class="kvadratic"></div>
-                <div class="kvadratic"></div>
-                <div class="kvadratic"></div>
-                <div class="kvadratic"></div>
-            </div>
-            </div>
-        </section>
-
-        <section class="portfolio" id="portfolio">
-          <h2 class="section-heading">My Portfolio</h2>
-          <img src="images/blue-sonce.svg" alt="" class="icon portfolio-sonechko">
-          <div class="portfolio-container">
-            <!-- Перший айтем -->
-            <div class="portfolio-item item1">
-              <div class="border-top"></div>
-              <div class="border-bottom"></div>
-              <div class="portfolio-shape">
-                <div class="portfolio-image icon">
-                  <img src="images/1.svg" alt="Фото">
-                </div>
-                <div class="portfolio-text">
-                  <div class="portfolio-title">Онлайн івенти і гібриди</div>
-                  <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup1">
-                    <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
-                  </button>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Другий айтем -->
-            <div class="portfolio-item item2">
-              <div class="border-top"></div>
-              <div class="border-bottom"></div>
-              <div class="portfolio-shape">
-                <div class="portfolio-image icon">
-                  <img src="images/2.svg" alt="Фото">
-                </div>
-                <div class="portfolio-text">
-                  <div class="portfolio-title">Офлайни для середніх команд</div>
-                  <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup2">
-                    <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
-                  </button>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Третій айтем -->
-            <div class="portfolio-item item3">
-              <div class="border-top"></div>
-              <div class="border-bottom"></div>
-              <div class="portfolio-shape">
-                <div class="portfolio-image icon">
-                  <img src="images/3.svg" alt="Фото">
-                </div>
-                <div class="portfolio-text">
-                  <div class="portfolio-title">Великі івенти і конференції</div>
-                  <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup3">
-                    <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
-                  </button>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Четвертий айтем -->
-            <div class="portfolio-item item4">
-              <div class="border-top"></div>
-              <div class="border-bottom"></div>
-              <div class="portfolio-shape">
-                <div class="portfolio-image icon">
-                  <img src="images/4.svg" alt="Фото">
-                </div>
-                <div class="portfolio-text">
-                  <div class="portfolio-title">Автоматизація процесів</div>
-                  <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup4">
-                    <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
-                  </button>
-                </div>
+              <div class="portfolio-text">
+                <div class="portfolio-title">Онлайн івенти і гібриди</div>
+                <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup1">
+                  <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
+                </button>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="feedback">
-            <h2 class="section-heading">Відгуки учасників і замовників івентів, організованих мною</h2>
-            <img src="images/heart.png" class="feedback-heart icon" alt="">
-            <div class="comments-container">
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Хочу підсвітити чудову роботу Каракусі: зустріла нас на локації, все показала, розказала коли буде доставка, що у замовленнях, комунікація по списку того, що потрібно не забути забрати, по скаргах від сусідів і тд – все супер чітко. Дуже дякую!
-                </p>  
-                </div>
-      
-      
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Гра сподобалась дуже сильно! Я не змогла бути до кінця, за що щиро шкодую. Думаю, те, що людина шкодує, бо пропустила частину корпоративного івенту, – чудове свідчення того, що цей івент був вдалим :) Дуже сподобалася ведуча: провела подію максимально легко, було відчуття, наче вона частина нашої команди, і давно нас знає.
-                  </p>
-                </div>
-      
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Мені все сподобалось. Каракуся просто вразила своєю професійністю.
-                  </p>
-                </div>
-      
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Каракуся зробила робота на 120%. Все чітко, зважено, як ми любимо. За все потурбувалась, про всіх подумала. Організація – на висоті. Плюс була на контакті та відкрита до нових пропозицій, що дало можливість трохи розширити варіативність меню. Тож, все було якісно та гарно, і попри тему зустрічі, все пройшло дуже гарно. Маю приємні враження.
-                  </p>
-                </div>
-      
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Каракуся дуже круто все планувала, сама все дивилась, від організатора я в захваті;
-                  </p>
-                </div>
-      
-              <div class="comment-item">
-                <div class="kvadratics-container">
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                  <div class="kvadratic"></div>
-                </div>
-                <p>Величезне дякую за організацію, не дивлячись на те, що я затягувала із відповідями Каракуся організувала все вчасно і на суперському рівні. Я зверталась із декількома забаганками і все спрацювало як нам того хотілось. Щодо локації також, не можу не відмітити, що з проблемою шуму з сусідніх квартир каракуся справилась дуже оперативно, і взагалі протягом вечору була на зв’язку по всіх питаннях. Дуже і дуже вдячна за організацію!
-                  </p>
-                </div>
+          <!-- Другий айтем -->
+          <div class="portfolio-item item2">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+            <div class="portfolio-shape">
+              <div class="portfolio-image icon">
+                <img src="images/2.svg" alt="Фото">
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-title">Офлайни для середніх команд</div>
+                <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup2">
+                  <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
+                </button>
+              </div>
+            </div>
           </div>
-          <svg class="icon-blue icon" >
-            <!-- Приклад підключення svg-спрайту -->
+          <!-- Третій айтем -->
+          <div class="portfolio-item item3">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+            <div class="portfolio-shape">
+              <div class="portfolio-image icon">
+                <img src="images/3.svg" alt="Фото">
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-title">Великі івенти і конференції</div>
+                <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup3">
+                  <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Четвертий айтем -->
+          <div class="portfolio-item item4">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+            <div class="portfolio-shape">
+              <div class="portfolio-image icon">
+                <img src="images/4.svg" alt="Фото">
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-title">Автоматизація процесів</div>
+                <button type="button" class="portfolio-arrow-container icon" data-popup-target="popup4">
+                  <img class="portfolio-arrow" src="images/portfolioarrow.svg" alt="Стрілка">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Feedback секція -->
+    <section class="feedback">
+      <div class="container">
+        <h2 class="section-heading">Відгуки учасників і замовників івентів, організованих мною</h2>
+        
+        <div class="comments-container">
+          <img src="images/heart.png" class="feedback-heart icon" alt="">
+          <!-- Кожен коментар -->
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Хочу підсвітити чудову роботу Каракусі: зустріла нас на локації, все показала, розказала коли буде доставка, що у замовленнях, комунікація по списку того, що потрібно не забути забрати, по скаргах від сусідів і тд – все супер чітко. Дуже дякую!</p>
+          </div>
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Гра сподобалась дуже сильно! Я не змогла бути до кінця, за що щиро шкодую. Думаю, те, що людина шкодує, бо пропустила частину корпоративного івенту, – чудове свідчення того, що цей івент був вдалим :) Дуже сподобалася ведуча: провела подію максимально легко, було відчуття, наче вона частина нашої команди, і давно нас знає.</p>
+          </div>
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Мені все сподобалось. Каракуся просто вразила своєю професійністю.</p>
+          </div>
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Каракуся зробила робота на 120%. Все чітко, зважено, як ми любимо. За все потурбувалась, про всіх подумала. Організація – на висоті. Плюс була на контакті та відкрита до нових пропозицій, що дало можливість трохи розширити варіативність меню. Тож, все було якісно та гарно, і попри тему зустрічі, все пройшло дуже гарно. Маю приємні враження.</p>
+          </div>
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Каракуся дуже круто все планувала, сама все дивилась, від організатора я в захваті;</p>
+          </div>
+          <div class="comment-item">
+            <div class="kvadratics-container">
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+              <div class="kvadratic"></div>
+            </div>
+            <p>Величезне дякую за організацію, не дивлячись на те, що я затягувала із відповідями Каракуся організувала все вчасно і на суперському рівні. Я зверталась із декількома забаганками і все спрацювало як нам того хотілось. Щодо локації також, не можу не відмітити, що з проблемою шуму з сусідніх квартир каракуся справилась дуже оперативно, і взагалі протягом вечору була на зв’язку по всіх питаннях. Дуже і дуже вдячна за організацію!</p>
+          </div>
+          <svg class="icon-blue icon">
             <use xlink:href="images/sprite.svg#vector-icon"></use>
           </svg>
-          <svg class="icon-pink icon" >
-            <!-- Приклад підключення svg-спрайту -->
+          <svg class="icon-pink icon">
             <use xlink:href="images/sprite.svg#vector-icon"></use>
           </svg>
-        </section>
-
-        <section class="contacts" id="contact">
-          <div class="contacts-container">
-            <svg class="icon-purple icon" >
-              <!-- Приклад підключення svg-спрайту -->
-              <use xlink:href="images/sprite.svg#vector-icon"></use>
-            </svg>
-            <h2 class="contacts-title">Зв’язок зі мною</h2>
-            <div class="contacts-icons">
-              <div class="icon-item icon"> 
-                <a href="https://t.me/karakusya" class="contact-link">
-                <img src="images/Frame 14 (2).svg" class="contacts-icon" alt="">
-                </a>
-                <img src="images/rysochki.svg" alt="" class="contact-rysochki">
-              </div>
-              <div class="icon-item icon"> 
-                <a href="https://www.linkedin.com/in/katerynakarakuts/" class="contact-link">
-                <img src="images/Frame 14 (1).svg" class="contacts-icon" alt="">
-                </a>
-                <img src="images/rysochki.svg" alt="" class="contact-rysochki">
-              </div>
-              <div class="icon-item icon"> 
-                <a href="https://www.instagram.com/karakusya/" class="contact-link">
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Contacts секція -->
+    <section class="contacts" id="contact">
+      <div class="container">
+        <div class="contacts-container">
+          <svg class="icon-purple icon">
+            <use xlink:href="images/sprite.svg#vector-icon"></use>
+          </svg>
+          <h2 class="contacts-title">Зв’язок зі мною</h2>
+          <div class="contacts-icons">
+            <div class="icon-item icon">
+              <a href="https://t.me/karakusya" class="contact-link">
+                <img src="images/Frame 14-2.svg" class="contacts-icon" alt="">
+              </a>
+              <img src="images/rysochki.svg" alt="" class="contact-rysochki">
+            </div>
+            <div class="icon-item icon">
+              <a href="https://www.linkedin.com/in/katerynakarakuts/" class="contact-link">
+                <img src="images/Frame 14-1.svg" class="contacts-icon" alt="">
+              </a>
+              <img src="images/rysochki.svg" alt="" class="contact-rysochki">
+            </div>
+            <div class="icon-item icon">
+              <a href="https://www.instagram.com/karakusya/" class="contact-link">
                 <img src="images/Frame 14.svg" class="contacts-icon" alt="">
-                </a>
-                <img src="images/rysochki.svg" alt="" class="contact-rysochki">
-              </div>
-
+              </a>
+              <img src="images/rysochki.svg" alt="" class="contact-rysochki">
             </div>
           </div>
-        </section>
-        <div id="popup1" class="popup">
-          <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <h3>Онлайн та гібридні заходи</h3>
-            <p>У цьому форматі заходів я займалася комплексною підтримкою як онлайн-частини, так і роботою на локації. Оганізувала і провела близько 10 онлайн івентів для команд від 10 до 80 людей</p>
-            <h4>Основні досягнення:</h4>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Попапи -->
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h3>Онлайн та гібридні івенти</h3>
+        <ul class="abzac none-list-style">
+          <li>Маю досвід повного циклу організації онлайн та гібридних заходів: від креативної розробки концепції до технічного супроводу трансляцій та роботи на локаціях.</li>
+          <li>Організувала та провела понад 10 онлайн-івентів для команд від 10 до 80 осіб, а також координувала масштабні інтерактивні активності для 130+ учасників.</li>
+        </ul>
+        <h4>Основні кейси:</h4>
+        <ul>
+          <li class="popup-subheading"><span>Гібридні заходи зі зйомками:</span>
+            <ul class="abzac">
+              <li>Підготовка локації до трансляції: зонування простору, підготовка реквізиту, організація гримерок та допоміжних кімнат.</li>
+              <li>Робота з акторами та ведучими: координація таймінгу, забезпечення комфортних умов для роботи.</li>
+              <li>Співпраця з технічними підрядниками: асистування команді трансляторів, оперативне вирішення організаційних питань, контроль дрібних деталей під час прямого ефіру.</li>
+              <li>Закупівля та управління реквізитом: формування списку необхідних матеріалів, закупівля, контроль доставки, організація зберігання.</li>
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Онлайн-івенти та інтерактиви:</span>
             <ul>
-              <li class="popup-subheading"><span>Гібридні заходи зі зйомками:</span>
+              <li class="sub-subheading"><span>Креативні внутрішньокорпоративні івенти:</span>
                 <ul>
-                  <li>Асистування на локації під час зйомок: підготовка реквізиту, акторів та залів для зйомки.</li>
-                  <li>Допомога команді трансляторщиків, виконання дрібних завдань івент-менеджера.</li>
-                  <li>Закупівля необхідного реквізиту для забезпечення якісного проведення заходу.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Онлайн-івенти:</span>
-                <ul>
-                  <li class="popup-subheading"><span>Квізи та інтерактиви:</span>
-                    <ul>
-                      <li>14 лютого: створення питань, розробка презентації, проведення заходу та технічна підтримка. Створення "Валентинової пошти" фоторедагування і розсилка валентинок між колегами</li>
-                      <li>8 березня: організація квізу та благодійної лотереї. Лотерея проводилась за допомогою чат-бота. Створення, фоторедагування і розсилка тематичних персональних стікерпаків.</li>
+                  <li class="little-heading"><span>14 лютого (2023): тематичний онлайн-квіз та "Валентинова пошта".</span> 
+                    <ul class="abzac">
+                      <li>Розробка сценарію та створення питань.</li>
+                      <li>Дизайн презентації для інтерактиву.</li>
+                      <li>Проведення заходу та технічний супровід.</li>
+                      <li>Мануальна розробка персональних валентинок: фоторедагування, створення індивідуальних листівок для кожного учасника, ручна розсилка.</li>
                     </ul>
                   </li>
-                  <li class="popup-subheading"><span>Інші онлайн-заходи:</span>
-                    <ul>
-                      <li>Проведення гри Gartic Phone, організація квізів для знайомства команд, командних ігор та вечорів для спілкування.</li>
+                  <li class="little-heading"><span>14 лютого (2024): оптимізація процесу – автоматизація створення та розсилки валентинок.</span> </li>
+                  <li class="little-heading"><span>8 березня: онлайн-квіз та благодійна лотерея.</span> 
+                    <ul class="abzac">
+                      <li>Розробка концепції, підготовка питань.</li>
+                      <li>Інтеграція чат-бота для проведення лотереї.</li>
+                      <li>Створення та розсилка персоналізованих стікерпаків для учасників.</li>
                     </ul>
                   </li>
                 </ul>
               </li>
-            </ul>
-            </div>
-        </div>
-        
-        <!-- Попап 2: Офлайн-заходи середнього масштабу -->
-        <div id="popup2" class="popup">
-          <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <h3>Офлайн-заходи середнього масштабу</h3>
-            <p>Я організовувала події для груп до 30 осіб, де особлива увага приділялася створенню комфортної атмосфери та інтерактивності. На разі на моєму рахунку 5 таких івентів.</p>
-            <h4>Основні досягнення:</h4>
-            <ul>
-              
-              <li class="popup-subheading"><span>Лофт-зустрічі та тематичні вечірки:</span>
-                <ul>
-                  <li>Оренда локації, замовлення їжі та алкоголю, розробка невеликих інтерактивів.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Заходи з оренди будинку:</span>
-                <ul>
-                  <li>Пошук великого будинку з басейном поблизу Києва або в самому місті, організація всіх етапів: закупівля їжі та алкоголю, створення кейр-стейшн та комунікація з усіма учасниками.</li>
-                  <li>Розробка меню для формату, коли учасники самі готують їжу.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Вечері у закладах:</span>
-                <ul>
-                  <li>Комунікація з учасниками щодо бажаного меню і напоїв, пошук локації з окремим простором для 25 осіб, підбір настільних ігор для невимушеного спілкування. Комунікація з закладами.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Маленькі офлайн-заходи:</span>
-                <ul>
-                  <li>Прикрашання офісу, організація кавабрейків та тренінгів (наприклад, навчання першодомедичної допомоги) із забезпеченням локації, кава-брейків та комунікації з учасниками.</li>
-                </ul>
-              </li>
-            </ul>
             
-          </div>
-        </div>
-        
-        <!-- Попап 3: Великі конференції та масштабні заходи -->
-        <div id="popup3" class="popup">
-          <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <h3>Великі конференції та масштабні заходи</h3>
-            <p>Маю досвід організації великих заходів до 600 учасників, де потрібно було керувати багатьма процесами одночасно. Впродовж цих івентів, завдяки благодійним ініціативам (аукціон, донатні паузи з активностями) ми зібрали всього майже 1млн грн для Хартії і Госпітальєрів. А також придбали пожежну машину, яку віддали в Харківську область для виїзду на гарячі точки.</p>
-            <h4>Основні досягнення:</h4>
+              
+              
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Онлайн-івенти для знайомства команд:</span>
             <ul>
-              <li class="popup-subheading"><span>Зимовий івент-корпоратив (Київська локація, 180 учасників):</span>
-                <ul>
-                  <li>Пошук та вибір локації, організація кейтерингу і барів, фотографу, декору.</li>
-                  <li>Координація з обладнанням для трансляції онлайн-івенту на локації.</li>
-                  <li>Розробка концепції івенту "Хто хоче зібрати на тачку"(в форматі шоу "Хто хоче стати мільйонером") і концепції, пошук реквізиту для «магазину на дивані» (благодійних рекламних пауз з донатами) та формулювання ідей для товарів (матрац Дормео, диво-шланг, супер-скотч, пояс з собачої шерсті) </li>
-                  <li>Робота з бюджетом.</li>
-                </ul>
-                <div class="gallery-container">
-                  <div class="gallery-track">
-                    <div class="gallery-item"><img src="images/tachka/DSC_9387-min.jpg" alt="Photo 1"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_6372-min.jpg" alt="Photo 2"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_6554-min.jpg" alt="Photo 3"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_6910-min.jpg" alt="Photo 4"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7059-min.jpg" alt="Photo 5"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7096-min.jpg" alt="Photo 6"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7129-min.jpg" alt="Photo 7"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7315-min.jpg" alt="Photo 8"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7368-min.jpg" alt="Photo 9"></div>
-                    <div class="gallery-item"><img src="images/tachka/N12_7513-min.jpg" alt="Photo 10"></div>
-                  </div>
-                
-                  <div class="gallery-button prev">&lt;</div>
-                  <div class="gallery-button next">&gt;</div>
-                </div>
-                
-              </li>
-              <li  class="popup-subheading"><span >Конференція на 350 учасників:</span>
-                <ul>
-                  <li>Розробка концепції декору локації, організація роботи хелперів на місці.</li>
-                  <li>Закупівля алкоголю, найм барменів, розробка коктейльної карти та розрахунок необхідної кількості напоїв.</li>
-                  <li>Генерація ідей для станцій активностей, оренда атракціонів</li>
-                  <li>Створення автоматизованої системи реєстрації з використанням QR-кодів: учасникам надсилали електронні листи з кодами, які сканували на місці для друку бейджів з іменем, посадою та компанією.</li>
-                  <li>Спільна з колегами івенторами розробка сценарію, механік донатних студій (паузи між спікерами, де все дійство крутилось навколо донатів на Хартію), схеми локації</li>
-                </ul>
-              </li>
-              <div class="gallery-container">
-                <div class="gallery-track">
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2236-min.jpg" alt="Photo 1"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2328-min.jpg" alt="Photo 2"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2371-min.jpg" alt="Photo 3"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2470-min.jpg" alt="Photo 4"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2800-min.jpg" alt="Photo 5"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_3006-min.jpg" alt="Photo 6"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_3086-min.jpg" alt="Photo 7"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_3100-min.jpg" alt="Photo 8"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_3389-min.jpg" alt="Photo 9"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/JC4A0955-min.jpg" alt="Photo 10"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/JC4A1256-min.jpg" alt="Photo 11"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/_P6A0328-min.jpg" alt="Photo 12"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/_P6A0640-min.jpg" alt="Photo 13"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/_P6A9662-min.jpg" alt="Photo 14"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/_P6A9664-min.jpg" alt="Photo 15"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_1521-min.jpg" alt="Photo 16"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_1525-min.jpg" alt="Photo 17"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_1942-min.jpg" alt="Photo 18"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_1988-min.jpg" alt="Photo 19"></div>
-                  <div class="gallery-item"><img src="images/summerpulse/DSC_2159-min.jpg" alt="Photo 20"></div>
-                </div>
-            
-                <div class="gallery-button prev">&lt;</div>
-                <div class="gallery-button next">&gt;</div>
-              </div>
-              <li class="popup-subheading"><span>Заходи на 600 учасників:</span>
-                <ul>
-                  <li>Координація роботи хелперів, удосконалення системи реєстрації, організація роботи барменів.</li>
-                  <li>Комунікація щодо кейтерингу, атракціонів, друкованих матеріалів, відповідальність за кейтеринг і клінінг під час заходу.</li>
-                  <li>Допомога у розробці концепцій декору, створення костюмів (я особисто шила костюми для аніматорів та офіціантів) та комунікація з постачальниками локації, техніки та трансляції.</li>
-                  <li>Підтримка у вирішенні дрібних питань під час проведення заходу.</li>
-                  <li>Співпраця з режисером проєкту, керівником проєкту, колегами івенторами в створенні сценарію, схеми локації, таймінгу</li>
-                </ul>
-              </li>
-              <div class="gallery-container">
-                <div class="gallery-track">
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00010-min.jpg" alt="DSC_0010-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00040-min.jpg" alt="DSC_0040-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00148-min.jpg" alt="DSC_0148-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00172-min.jpg" alt="DSC_0172-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00214-min.jpg" alt="DSC_0216-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00226-min.jpg" alt="DSC_0226-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00437-min.jpg" alt="DSC_0229-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_00589-min.jpg" alt="DSC_0237-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_01013-min.jpg" alt="DSC_0247-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_01216-min.jpg" alt="DSC_0270-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_01374-min.jpg" alt="DSC_0274-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_01383-min.jpg" alt="DSC_0292-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_02278-min.jpg" alt="DSC_0297-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_02392-min.jpg" alt="DSC_0333-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_02704-min.jpg" alt="DSC_0336-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_02977-min.jpg" alt="DSC_0342-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_03390-min.jpg" alt="DSC_0383-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_03484-min.jpg" alt="DSC_0392-min">
-                  </div>
-                  <div class="gallery-item">
-                    <img src="images/pulsebalance/DSC_03594-min.jpg" alt="DSC_0394-min">
-                  </div>
-                  
-                </div>
+              <li class="little-heading"><span>Ведення онлайн-івенту у форматі гри, під час якої учасники відгадували факти про колег.</span></li>
+              <li class="little-heading"><span>Серія окремих онлайн-заходів, спрямованих на знайомство колег між собою.</span></li>
+              <li class="little-heading"><span>Підготовка інтерактивної програми для кожного івенту:</span></li>
+              <ul class="abzac">
+                <li>Розробка блоку запитань про співробітників.</li>
+                <li>Проведення опитування серед учасників для збору персональних фактів.</li>
+                <li>Створення квізу у Kahoot на основі зібраної інформації.</li>
+              </ul>
               
-                <!-- Кнопки перемикання -->
-                <div class="gallery-button prev">&lt;</div>
-                <div class="gallery-button next">&gt;</div>
-              </div>
-              
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Інші онлайн-заходи:</span>
+            <ul class="abzac">
+              <li>Організація та проведення гри Gartic Phone.</li>
+              <li>Віртуальні командні ігри та вечори для неформального спілкування.</li>
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Масштабні онлайн-активності:</span>
+            <ul class="abzac">
+              <li>Секрет Санта для 130 учасників: організація корпоративного обміну подарунками.</li>
+              <li>Онлайн-книжкове ком'юніті: створення та адміністрування внутрішньої спільноти книголюбів.</li>
+              <li>Акція "Таємний Книгодарувач" до Міжнародного дня дарування книг.</li>
+            </ul>
+          </li>
+        </ul>
+        <h4>Ключові навички у межах цих проєктів:</h4>
+        <ul class="abzac">
+          <li>Розробка креативних концепцій онлайн-активностей.</li>
+          <li>Управління командними іграми та інтерактивами.</li>
+          <li>Організація масштабних активностей для великих груп (130+ осіб).</li>
+          <li>Використання інструментів онлайн-комунікації та гейміфікації (Kahoot, чат-боти, Zoom, Google Meet).</li>
+          <li>Фоторедагування та створення графічних матеріалів.</li>
+          <li>Оптимізація та автоматизація процесів у межах івентів.</li>
+        </ul>
+      </div>
+    </div>
+    
+     <!-- Попап 2: Офлайн-заходи середнього масштабу -->
+     <div id="popup2" class="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h3>Офлайн-заходи середнього масштабу</h3>
+        <ul class="abzac none-list-style">
+          <li>
+            Організовувала камерні події для груп до 30 осіб, де особлива увага приділялася створенню комфортної атмосфери, неформальному спілкуванню та інтерактивним елементам.
+          </li>
+          <li>
+            На моєму рахунку 5 таких заходів, що охоплювали різні формати — від дружніх тематичних зустрічей до освітніх тренінгів.
+          </li>
+        </ul>
+        <h4>Основні кейси:</h4>
+        <ul>
+          <li class="popup-subheading"><span>Лофт-зустрічі та тематичні вечірки:</span>
+            <ul class="abzac">
+              <li>Підбір та оренда локацій (лофти, апартаменти), які відповідають концепції події.</li>
+              <li>Організація кейтерингу: замовлення їжі, алкоголю, напоїв з урахуванням дієтичних уподобань учасників.</li>
+              <li>Інтерактивна програма: розробка простих ігор та активностей, які сприяють спілкуванню та створюють невимушену атмосферу.</li>
+              <li>Декорування простору відповідно до тематики заходу (за потреби).</li>
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Виїзні заходи у заміських будинках:</span>
+            <ul class="abzac">
+              <li>Пошук та оренда великих будинків із басейном, терасою або великою територією поблизу Києва.</li>
+              <li>Комплексна організація заходу: закупівля продуктів, алкоголю, планування бюджету.</li>
+              <li>Формат “готування разом”: розробка меню, яке передбачає спільне приготування їжі учасниками.</li>
+              <li>Створення care station: зона з напоями, снеками, засобами для комфорту учасників протягом дня.</li>
+              <li>Транспортування учасників (за потреби).</li>
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Вечері у ресторанах:</span>
+            <ul class="abzac">
+              <li>Вибір закладів із можливістю бронювання окремого залу чи приватної зони для груп до 25 осіб.</li>
+              <li>Менеджмент меню: збір побажань від учасників, узгодження страв та напоїв із закладом.</li>
+              <li>Інтерактивне дозвілля: підбір та організація настільних ігор, легких активностей, що сприяють невимушеній комунікації.</li>
+            </ul>
+          </li>
+          <li class="popup-subheading"><span>Корпоративні міні-івенти та освітні заходи:</span>
+            <ul>
+              <li class="little-heading">Офісні активності: прикрашання офісу до святкових подій, створення зони для кава-брейків.</li>
+              <li class="little-heading">Організація тренінгів (наприклад, навчання з першої домедичної допомоги):</li>
+              <ul class="abzac">
+                <li>Підбір та бронювання локації.</li>
+                <li>Забезпечення кава-брейку.</li>
+                <li>Комунікація з учасниками та тренером.</li>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <h4>Ключові навички у межах цих проєктів:</h4>
+        <ul class="abzac">
+          <li>Організація логістики заходів “під ключ”.</li>
+          <li>Робота з постачальниками (кейтеринг, оренда, декор).</li>
+          <li>Бюджетування камерних заходів.</li>
+          <li>Комунікація з учасниками, збір їхніх побажань.</li>
+          <li>Створення дружньої, невимушеної атмосфери на подіях.</li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h3>Масштабні кнференції, корпоративи, режисерські постановки</h3>
+        <ul class="abzac none-list-style">
+          <li> Маю досвід організації подій від 180 до 600 учасників, що передбачали комплексне управління різними процесами: від логістики та роботи з підрядниками до координації команд та впровадження інноваційних механік взаємодії з аудиторією.</li>
+          <li>Під час цих заходів, завдяки благодійним активностям (аукціон, донатні паузи, інтерактиви), спільно з командою вдалося зібрати майже 1 млн грн для Хартії та Госпітальєрів. На зібрані кошти було придбано пожежну машину для Харківської області, яка тепер допомагає ліквідовувати наслідки обстрілів.</li>
+        </ul>
+        <h4>Основні кейси:</h4>
+          <ul>
+            <li  class="popup-subheading"><span>Зимовий корпоратив для 180 учасників (Київська локація)</span>
+            <ul>
+             <li  class="little-heading"><span>Формат: гібридний івент (оффлайн + онлайн-трансляція)</span></li>
+             <li  class="little-heading"><span>Ключова особливість: благодійна інтеграція у форматі розважального шоу</span></li>
             </ul>
            
-            
-          </div>
-        </div>
-        
-        <!-- Попап 4: Оптимізація процесів та автоматизація -->
-        <div id="popup4" class="popup">
-          <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <h3>Оптимізація процесів та автоматизація</h3>
-            <p>Я впроваджую розумні рішення для оптимізації організаційних процесів, що дозволяє економити час та зменшувати ручну працю. Для мене цікаво і цінно один раз запаритись над автоматизацією, ніж потім мучатись з великою кількістю монотонної роботи. Це допомагає витрачати свій час на більш важливі справи.</p>
-            <h4>Основні досягнення:</h4>
-            <ul>
-              <li class="popup-subheading"><span>Створення зручного бріфу:</span>
-                <ul>
-                  <li>Розробка анкети, яку заповнюють замовники коли хочуть організувати івент, це дозволяє чітко визначити завдання, терміни та відповідальних осіб.</li>
-                  <li>Прозора комунікація з клієнтами та командою, що допомагає уникнути непотрібних уточнень і довгої підготовчої комунікації.</li>
-                  <li>Таким чином ми значно зменшили ситуації якоїсь необговореної деталі щодо івенту, адже івентору, який веде комунікацію із замовником, не треба тримати в голові всі необхідні питання.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Автоматизована система реєстрації:</span>
-                <ul>
-                  <li>Впровадження системи з QR-кодами для швидкого друку бейджів на місці.</li>
-                  <li>Надсилання електронних листів з кодами, що дозволяє зменшити час очікування та уникнути зайвих витрат на друк.</li>
-                  <li>У нас виникла проблема в комунікації з підрядником, що займається повним циклом реєстрації на івент. Я подумала, що можливо я можу зробити аналог такої системи реєстрації, щоб при великій кількості гостей івенту, нам не треба було друкувати заздалегідь всі бейджі тим, хто зареєструвався. В такому варіанті було багато ризиків: помилки в написанні імен/компаній/посад, неможливість змінити вже готовий бейдж. Якщо людина не зареєструвалась, але є співробітником компанії, а отже ми не можемо її не пропустити. Якщо багато з тих, хто зареєструвався, не завітає на івент, бейджі не будуть використані, це не економно і не екологічно.</li>
-                  <li>1. У Google Apps Scripts я прописала код, який на основі інформації про співробітника, яка заздалегідь сформована в гугл-таблицю, бейдж і завантажує його на гугл диск.</li>
-                  <li>2. Код бере посилання на цей бейдж і через API створює QR-код з посиланням на нього.</li>
-                  <li>3. Потім створюється лист для кожного співробітника, де є всі деталі про івент і QR код</li>
-                  <li>4. Хостес на стійці реєстрації при скануванні QR коду отримує файл бейджу і друкує його на наліпці, наклеює на бейдж і віддає гостю.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Автоматична розсилка валентинок:</span>
-                <ul>
-                  <li>Розробка кода в Google Apps Scripts для створення та розсилки листівок (як анонімних, так і неанонімних) для тематичних заходів, наприклад, до 14 лютого.</li>
-                  <li>Підвищення інтерактивності заходу за рахунок залучення учасників у веселу комунікацію.</li>
-                  <li>Це дозволило заощадити близько 30 годин роботи івент-менеджерів.</li>
-                  <li>Зроблено це було за тим же принципом, що і система реєстрації.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Створення зручного візуалізованого каталогу концепцій івентів для замовників</span>
-                <ul>
-                  <li>Переформатування текстового набору ідей для концепцій івентів у більш зручну версію в Notion зі зручною навігацією.</li>
-                  <li>Скоротила текст до суті і підкріпила все візуальними елементами для простішого сприйняття.</li>
-                </ul>
-              </li>
-              <li class="popup-subheading"><span>Створення лендингів</span>
-                <ul>
-                  <li>Так як я проходила навчання на Full Stack Developer, я маю базові знання HTML, CSS, JS. Інколи створюю невеликі сайти для онлайн івентів (невеликі квести)</li>
-                  <li>Це портфоліо теж верстала сама))</li>
-                </ul>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-        
-    </main>
+             <ul class="abzac">
+               <li>Пошук та оренда локації, що відповідала технічним вимогам для трансляції.</li>
+               <li>Організація кейтерингу, бару, декору, фото- та відеозйомки.</li>
+               <li>Координація роботи технічних підрядників під час трансляції.</li>
+                <li>Підготовка кошторису, контроль витрат.</li>
+                <li  class="little-heading"><span>Розробка благодійної концепції заходу:</span></li>
+               <ul class="abzac">
+                 <li>Ідея “Хто хоче зібрати на тачку” – адаптація формату популярного телешоу "Хто хоче стати мільйонером" у благодійному форматі.</li>
+                 <li>Інтерактивні донат-паузи у стилі "магазин на дивані".</li>
+                 <li>Пошук реквізиту, написання сценарію.</li>
+                 <li>Формування креативних “товарів” для продажу.</li>
+                 <li>Створення легкої атмосфери, що мотивувала учасників активно донатити.</li>
+               </ul>
+              
+               <div class="gallery-container">
+                 <div class="gallery-track">
+                   <div class="gallery-item"><img src="images/tachka/DSC_9387-min.jpg" alt="Photo 1"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_6372-min.jpg" alt="Photo 2"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_6554-min.jpg" alt="Photo 3"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_6910-min.jpg" alt="Photo 4"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7059-min.jpg" alt="Photo 5"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7096-min.jpg" alt="Photo 6"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7129-min.jpg" alt="Photo 7"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7315-min.jpg" alt="Photo 8"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7368-min.jpg" alt="Photo 9"></div>
+                   <div class="gallery-item"><img src="images/tachka/N12_7513-min.jpg" alt="Photo 10"></div>
+                 </div>
+               
+                 <div class="gallery-button prev">&lt;</div>
+                 <div class="gallery-button next">&gt;</div>
+               </div>
+             </ul>
+             </li>
+             <li  class="popup-subheading"><span>Внутрішня конференція на 350 учасників</span>
+             <ul>
+              <li  class="little-heading"><span>Формат: офлайн конференція + донатні інтеграції. </span></li>
+              <li  class="little-heading"><span>Ключова особливість: автоматизація реєстрації та акцент на фандрейзинг. </span></li>
+              </ul>
+             <ul class="abzac">
+               <li>Розробка концепції декору локації.</li>
+               <li>Організація інтерактивних зон.</li>
+               <li>Сценарій та фандрейзинг: донатні студії між виступами.</li>
+               <li>Координація роботи хелперів.</li>
+               <li  class="little-heading" ><span>Управління реєстрацією:</span></li>
+               <ul class="abzac">
+                 <li>Створення автоматизованої системи реєстрації учасників із QR-кодами.</li>
+                 <li>Організація onsite-реєстрації: сканування кодів, друк бейджів.</li>
+               </ul>
+               <li  class="little-heading" ><span>Бар та кейтеринг:</span></li>
+               <ul class="abzac">
+                 <li>Розрахунок кількості алкоголю та напоїв для afterparty.</li>
+                 <li>Підбір барменів, розробка коктейльної карти.</li>
+               </ul>
+               <div class="gallery-container">
+                 <div class="gallery-track">
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2236-min.jpg" alt="Photo 1"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2328-min.jpg" alt="Photo 2"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2371-min.jpg" alt="Photo 3"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2470-min.jpg" alt="Photo 4"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2800-min.jpg" alt="Photo 5"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_3006-min.jpg" alt="Photo 6"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_3086-min.jpg" alt="Photo 7"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_3100-min.jpg" alt="Photo 8"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_3389-min.jpg" alt="Photo 9"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/JC4A0955-min.jpg" alt="Photo 10"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/JC4A1256-min.jpg" alt="Photo 11"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/_P6A0328-min.jpg" alt="Photo 12"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/_P6A0640-min.jpg" alt="Photo 13"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/_P6A9662-min.jpg" alt="Photo 14"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/_P6A9664-min.jpg" alt="Photo 15"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_1521-min.jpg" alt="Photo 16"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_1525-min.jpg" alt="Photo 17"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_1942-min.jpg" alt="Photo 18"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_1988-min.jpg" alt="Photo 19"></div>
+                   <div class="gallery-item"><img src="images/summerpulse/DSC_2159-min.jpg" alt="Photo 20"></div>
+                 </div>
+             
+                 <div class="gallery-button prev">&lt;</div>
+                 <div class="gallery-button next">&gt;</div>
+               </div>
+             </ul>
+             </li>
+         
+             <li  class="popup-subheading"><span>Відкрита конференція-корпоратив на 600 учасників</span>
+             <ul>
+              <li  class="little-heading" ><span>Формат: офлайн фестивалі, корпоративи</span></li>
+              <li  class="little-heading" ><span>Ключова особливість: багатозадачність, залучення до всіх ключових процесів</span></li>
+             </ul>
+              <ul class="abzac">
+               <li>Робота з персоналом: координація роботи хелперів, барменів, кейтерингу, клінінгу.</li>
+               <li>Розширення системи реєстрації: удосконалення системи QR-кодів та бейджів.</li>
+               <li>Комунікація з підрядниками.</li>
+               <li>Оформлення локації; Допомога у розробці декору.  Власноручне створення костюмів для аніматорів та офіціантів (пошиття костюмів).</li>
+               <li>Управління процесами на локації: оперативне вирішення організаційних питань під час заходу.</li>
+               <li>Співпраця з режисером проєкту, керівником та командою івент-менеджерів; Участь у розробці сценарію, схеми розташування зон, таймінгу заходу.</li>
+               <div class="gallery-container">
+                 <div class="gallery-track">
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00010-min.jpg" alt="DSC_0010-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00040-min.jpg" alt="DSC_0040-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00148-min.jpg" alt="DSC_0148-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00172-min.jpg" alt="DSC_0172-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00214-min.jpg" alt="DSC_0216-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00226-min.jpg" alt="DSC_0226-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00437-min.jpg" alt="DSC_0229-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_00589-min.jpg" alt="DSC_0237-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_01013-min.jpg" alt="DSC_0247-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_01216-min.jpg" alt="DSC_0270-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_01374-min.jpg" alt="DSC_0274-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_01383-min.jpg" alt="DSC_0292-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_02278-min.jpg" alt="DSC_0297-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_02392-min.jpg" alt="DSC_0333-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_02704-min.jpg" alt="DSC_0336-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_02977-min.jpg" alt="DSC_0342-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_03390-min.jpg" alt="DSC_0383-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_03484-min.jpg" alt="DSC_0392-min">
+                   </div>
+                   <div class="gallery-item">
+                     <img src="images/pulsebalance/DSC_03594-min.jpg" alt="DSC_0394-min">
+                   </div>
+                   
+                 </div>
+               
+                 <!-- Кнопки перемикання -->
+                 <div class="gallery-button prev">&lt;</div>
+                 <div class="gallery-button next">&gt;</div>
+               </div>
+             </ul>
+             </li>
+         
+             <li  class="popup-subheading"><span>Режисерсько-постановчі заходи з творчою командою (~100 осіб)</span>
+              <ul>
+                <li  class="little-heading" ><span>Формат: театральні вистави, творчі шоу.</span></li>
+                <li  class="little-heading" ><span>Ключова особливість: управління великою креативною командою, постановка комплексних номерів.</span></li>
+              </ul>
+              
+              <ul class="abzac">
+               <li>Постановка вистав, поєднання різних жанрів.</li>
+               <li>Робота з командою ~100 осіб.</li>
+               <li>Організація міждепартаментної співпраці.</li>
+               <li>Планування та встановлення декорацій.</li>
+               <li>Залучення нових учасників, тімбілдинги.</li>
+               <li>Комунікація з адміністрацією університету.</li>
+              </ul>
+            </li>
+             <h4>Ключові навички у межах цих проєктів:</h4>
+             <ul class="abzac">
+               <li>Управління великими командами.</li>
+               <li>Координація складних багаторівневих процесів під час заходу.</li>
+               <li>Організація реєстраційних систем.</li>
+               <li>Розробка фандрейзингових активностей, інтеграція благодійності у програму.</li>
+               <li>Бюджетування, контроль витрат.</li>
+               <li>Взаємодія з підрядниками.</li>
+               <li>Постановка творчих шоу.</li>
+               <li>Комунікація з офіційними структурами.</li>
+               <li>Реалізація креативних ідей.</li>
+             </ul>
+          </ul>
+      </div>
+    </div>
     
+    
+    <!-- Попап 3: Великі конференції та масштабні заходи -->
+    
+    
+    <!-- Попап 4: Оптимізація процесів та автоматизація -->
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h3>Оптимізація процесів та автоматизація</h3>
+       <ul  class="abzac none-list-style">
+        <li>Я впроваджую інструменти та рішення, які допомагають значно спростити організаційні процеси, зменшити кількість рутинної роботи, заощадити час команди та підвищити ефективність підготовки до заходів. </li>
+        <li>Мій підхід: один раз інвестувати час в автоматизацію, щоб потім мінімізувати ручну працю та сфокусуватись на стратегічно важливих завданнях.</li>
+       </ul>
+       
+    
+        <h4>Основні досягнення:</h4>
+        <ul>
+          <li  class="popup-subheading"><span>Автоматизована система реєстрації учасників із QR-кодами</span>
+            <ul  class="abzac">
+              <li><strong>Проблема: </strong> Друк 600+ бейджів заздалегідь спричиняв помилки, витрати, непередбачених гостей та екологічні збитки.</li>
+              <li><strong>Рішення:  </strong> Розробила Google Apps Script для генерації PDF-бейджів і QR-кодів, розсилки запрошень та друку бейджів на місці при скануванні.              </li>
+              <li><strong>Результат:</strong> Реєстрація 30 сек (замість 2-3 хв), зниження витрат, екологічність, гнучкість для незареєстрованих гостей.</li>
+            </ul>
+          </li>
+    
+          <li  class="popup-subheading"><span>Автоматична розсилка валентинок</span>
+            <ul  class="abzac">
+              <li><strong>Проблема: </strong> 30 годин ручної підготовки валентинок у 2023 році.</li>
+              <li><strong>Рішення:  </strong> Google Apps Script автоматично генерує персоналізовані PNG-листівки з Google Форми та надсилає їх поштою.              </li>
+              <li><strong>Результат:</strong> Економія 30+ годин, інтерактивність заходу, мінімізація помилок.</li>
+            </ul>
+          </li>
+    
+          <li  class="popup-subheading"><span>Бриф для замовників заходів</span>
+            <ul  class="abzac">
+              <li><strong>Проблема: </strong> Хаос у комунікаціях, втрата деталей при першому обговоренні замовлення івенту.</li>
+              <li><strong>Рішення:  </strong> Створила анкету для збору цілей, бюджету, формату, меню, технічних потреб та контактних осіб.</li>
+              <li><strong>Результат:</strong> Узгодження скорочено на 1-2 дні, зниження ризику упущень, єдиний стандарт для команди.</li>
+            </ul>
+          </li>
+    
+          <li  class="popup-subheading"><span>Візуалізований каталог концепцій івентів</span>
+            <ul  class="abzac">
+              <li><strong>Проблема: </strong> Текстові файли ускладнювали підбір ідей.</li>
+              <li><strong>Рішення:  </strong> Систематизувала концепції в Notion із картками, стислими описами та візуалізацією.              </li>
+              <li><strong>Результат:</strong> Швидший підбір івентів, полегшений вибір для клієнтів.</li>
+            </ul>
+          </li>
+    
+          <li  class="popup-subheading"><span>Створення лендингів</span>
+            <ul  class="abzac">
+              <li>Володію базовими HTML, CSS, JavaScript.</li>
+              <li>Створювала лендинги для онлайн-івентів, інтерактивні сторінки для квестів, зверстала це портфоліо))</li>
+            </ul>
+          </li>
+        </ul>
+    
+        <h4>Ключові навички у межах автоматизації:</h4>
+        <ul  class="abzac">
+          <li>Google Apps Script (автоматизація листів, створення html і png, QR-коди).</li>
+          <li>API інтеграції для роботи з документами та зображеннями.</li>
+          <li>Google Workspace (Forms, Sheets, Docs, Drive).</li>
+          <li>HTML, CSS, JavaScript – базова верстка лендингів.</li>
+          <li>Notion – систематизація контенту та створення баз знань.</li>
+          <li>Canva, Figma</li>
+        </ul>
+      </div>
+    </div>
+    
+  </main>
   
-    <!-- Скрипти для відкриття/закриття попапів -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Відкриття попапу при кліку на кнопку
-        const popupButtons = document.querySelectorAll('[data-popup-target]');
-        popupButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            const popupId = this.getAttribute('data-popup-target');
-            const popup = document.getElementById(popupId);
-            if (popup) {
-              popup.classList.add('active');
-            }
-          });
-        });
-  
-        // Закриття попапу при кліку на кнопку закриття
-        const closeButtons = document.querySelectorAll('.popup-close');
-        closeButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            const popup = this.closest('.popup');
-            popup.classList.remove('active');
-          });
-        });
-  
-        // Закриття попапу при кліку поза контентом
-        document.querySelectorAll('.popup').forEach(popup => {
-          popup.addEventListener('click', function(e) {
-            if (e.target === this) {
-              this.classList.remove('active');
-            }
-          });
+  <!-- Скрипти -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Відкриття попапу при кліку на кнопку
+      const popupButtons = document.querySelectorAll('[data-popup-target]');
+      popupButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const popupId = this.getAttribute('data-popup-target');
+          const popup = document.getElementById(popupId);
+          if (popup) {
+            popup.classList.add('active');
+          }
         });
       });
-      
-    // Знаходимо ВСІ галереї
-const allGalleries = document.querySelectorAll('.gallery-container');
-
-// Для кожної галереї ініціалізуємо власну логіку
-allGalleries.forEach((galleryContainer) => {
-  const track = galleryContainer.querySelector('.gallery-track');
-  const items = galleryContainer.querySelectorAll('.gallery-item');
-  const prevButton = galleryContainer.querySelector('.gallery-button.prev');
-  const nextButton = galleryContainer.querySelector('.gallery-button.next');
-
-  let index = 0;
-  let interval;
-
-  function updateSlider() {
-    // Використовуємо відсотки (%), а не vw
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() {
-    index = (index + 1) % items.length;
-    updateSlider();
-  }
-
-  function prevSlide() {
-    index = (index - 1 + items.length) % items.length;
-    updateSlider();
-  }
-
-  function startAutoScroll() {
-    interval = setInterval(nextSlide, 3000);
-  }
-
-  function stopAutoScroll() {
-    clearInterval(interval);
-  }
-
-  // Обробники кліків для кнопок
-  prevButton.addEventListener('click', () => {
-    prevSlide();
-    stopAutoScroll();
-    startAutoScroll();
-  });
-
-  nextButton.addEventListener('click', () => {
-    nextSlide();
-    stopAutoScroll();
-    startAutoScroll();
-  });
-
-  // Запускаємо автопрокрутку для кожної галереї
-  startAutoScroll();
-});
-
-    </script>
+  
+      // Закриття попапу при кліку на кнопку закриття
+      const closeButtons = document.querySelectorAll('.popup-close');
+      closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const popup = this.closest('.popup');
+          popup.classList.remove('active');
+        });
+      });
+  
+      // Закриття попапу при кліку поза контентом
+      document.querySelectorAll('.popup').forEach(popup => {
+        popup.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+          }
+        });
+      });
+    });
+  
+    // Логіка для галерей
+    const allGalleries = document.querySelectorAll('.gallery-container');
+    allGalleries.forEach((galleryContainer) => {
+      const track = galleryContainer.querySelector('.gallery-track');
+      const items = galleryContainer.querySelectorAll('.gallery-item');
+      const prevButton = galleryContainer.querySelector('.gallery-button.prev');
+      const nextButton = galleryContainer.querySelector('.gallery-button.next');
+      let index = 0;
+      let interval;
+  
+      function updateSlider() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+  
+      function nextSlide() {
+        index = (index + 1) % items.length;
+        updateSlider();
+      }
+  
+      function prevSlide() {
+        index = (index - 1 + items.length) % items.length;
+        updateSlider();
+      }
+  
+      function startAutoScroll() {
+        interval = setInterval(nextSlide, 3000);
+      }
+  
+      function stopAutoScroll() {
+        clearInterval(interval);
+      }
+  
+      prevButton.addEventListener('click', () => {
+        prevSlide();
+        stopAutoScroll();
+        startAutoScroll();
+      });
+  
+      nextButton.addEventListener('click', () => {
+        nextSlide();
+        stopAutoScroll();
+        startAutoScroll();
+      });
+  
+      startAutoScroll();
+    });
+  </script>
 </body>
 </html>

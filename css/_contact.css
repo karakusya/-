@@ -1,0 +1,128 @@
+/* Базові стилі (mobile-first) */
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.contacts-container {
+  background: #fff;
+  border: 4px solid #000;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 1);
+  border-radius: 2px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  min-height: 30vh;
+}
+
+/* Фіолетова іконка (декоративна) */
+.contacts .icon-purple {
+  position: absolute;
+top: -60px;
+left: -20px;
+  width: 80px;
+ 
+}
+
+/* Заголовок */
+.contacts-title {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* Контейнер із іконками */
+.contacts-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-item {
+  width: calc(33% - 20px);
+  position: relative;
+  
+}
+
+.contacts-icon {
+width: 80%;
+  height: auto;
+}
+
+.contact-rysochki {
+  position: absolute;
+  bottom: -10px;
+right: -15px;
+width: 40%;
+}
+
+@media screen and (min-width: 426px) {
+  .contacts-container {
+    min-height: 20vw;
+  }
+}
+/* ==========================================
+   Медіа‑запит для екранів від 768px
+========================================== */
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  /* Фіксована ширина контейнера */
+  .contacts-container {
+   
+  }
+  
+  /* Заголовок позиціонуємо абсолютно по центру зверху */
+  .contacts-title {
+   
+   
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  /* Іконки розташовуємо в один ряд */
+  .contacts-icons {
+    
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  
+  .contacts-icon {
+    width: 60%;
+
+  }
+  .contact-rysochki {
+    position: absolute;
+    bottom: -10px;
+  right: 0px;
+  width: 30%;
+  }
+  /* Декоративна стрілка – показуємо та позиціонуємо */
+  
+  
+  /* Фіолетова іконка – абсолютне позиціювання у верхньому лівому кутку */
+  .contacts .icon-purple {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    width: 100px;
+    
+  }
+}
+
+/* ==========================================
+   Медіа‑запит для екранів від 1200px
+========================================== */
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,151 @@
+/* ===========================================
+   Mobile-first базові стилі для секції About
+=========================================== */
+
+/* Загальні стилі секції */
+.about {
+  position: relative;
+  padding: 20px;
+}
+
+.about .section-heading {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Декоративна усмішка (для мобільної версії – в потоці) */
+.about-smile {
+  display: block;
+  margin: 0 auto 20px;
+  width: 50px; /* можна відкоригувати */
+}
+
+/* Контейнер з контентом About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* Сітка з пунктами “about-items” – базово 1 колонка */
+.about-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: #fff;
+  border: 2px solid black;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 1);
+  padding: 20px;
+}
+
+/* Кожен пункт */
+.about-item {
+  border: 1px solid #000;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Іконки в пунктах */
+.about-icon {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 60px;
+}
+
+/* Декоративний блок з квадратами (kvadratics) */
+.kvadratics-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.about .kvadratics-container div:nth-of-type(1) {
+  top: -10px;
+  left: -10px;
+}
+.about .kvadratics-container div:nth-of-type(2) {
+  top: -10px;
+  right: -10px;
+}
+.about .kvadratics-container div:nth-of-type(3) {
+  bottom: 30px;
+  left: -10px;
+}
+.about .kvadratics-container div:nth-of-type(4) {
+  bottom: 30px;
+  right: -10px;
+}
+
+.kvadratic {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  background: #fff;
+}
+
+/* ===========================================
+   Супутні стилі для “shape-rectangle-size7” та ін.
+   (пропорції розраховані від 512px)
+=========================================== */
+
+
+
+/* ===========================================
+   Медійні запити для пристроїв
+=========================================== */
+
+/* При ширині від 425px */
+@media screen and (min-width: 425px) {
+  .about .section-heading {
+    font-size: 32px;
+  }
+  .about-item {
+    font-size: 18px;
+  }
+}
+
+/* При ширині від 768px – зміна сітки та позиціонування */
+@media screen and (min-width: 768px) {
+  /* Переходимо на 2 колонки */
+  .about-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Reposition декоративної усмішки */
+  .about-smile {
+    position: absolute;
+    right: 40%;
+    top: 200px;
+    margin: 0;
+    width: 60px;
+  }
+  /* Вирівнюємо текст пунктів ліворуч */
+  .about-item {
+    text-align: left;
+  }
+}
+
+/* При ширині від 1080px */
+@media screen and (min-width: 1080px) {
+  .about .section-heading {
+    font-size: 36px;
+  }
+  .about-item {
+    font-size: 20px;
+    padding: 25px 50px;
+  }
+  .about-icon {
+    margin-bottom: 30px;
+    max-width: 80px;
+  }
+}
+
+/* При ширині від 1200px */
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 40px;
+  }
+}
