@@ -35,46 +35,30 @@
 /* Стилізація окремого коментаря */
 .comment-item {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   padding: 20px;
   box-shadow: 12px 12px 0 rgba(0, 0, 0, 1);
   border: 2px solid #000;
   position: relative;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   text-align: center;
+}
+.comment-item h4 {
+  text-shadow: none;
+  padding-bottom: 10px;
+border-bottom: 1px solid black;
 }
 
 /* Декоративні обертання для коментарів */
-.comment-item:nth-child(1) {
-  transform: rotate(-8deg) translateY(-1px);
-}
-.comment-item:nth-child(2) {
-  transform: rotate(3deg) translateY(10px);
-}
-.comment-item:nth-child(3) {
-  transform: rotate(12deg) translateY(-5px);
-}
-.comment-item:nth-child(4) {
-  transform: rotate(-11deg) translateY(12px);
-}
-.comment-item:nth-child(5) {
-  transform: rotate(7deg) translateY(-8px);
-}
-.comment-item:nth-child(6) {
-  transform: rotate(-2deg) translateY(5px);
-}
-.comment-item:nth-child(7) {
-  transform: rotate(-6deg) translateY(-12px);
-}
+
 
 /* Hover-ефект для коментаря */
-.comment-item:hover {
-  transform: scale(1.05) rotate(0deg);
-  transition: transform 0.3s ease;
-}
+
 
 /* Декоративні квадратики */
 .feedback .kvadratic {
@@ -142,9 +126,10 @@ left: -70px;
   }
 
   .comment-item {
-    font-size: 18px;
-  
- 
+  flex-direction: column;
+  text-wrap: balance;
+ gap: auto;
+
     border: 3px solid #000;
   }
 
@@ -165,7 +150,33 @@ left: -70px;
     bottom: 20px;
     right: -230px;
   }
+  .comment-item:nth-child(1) {
+    transform: rotate(-8deg) translateY(-1px);
+  }
+  .comment-item:nth-child(2) {
+    transform: rotate(3deg) translateY(10px);
+  }
+  .comment-item:nth-child(3) {
+    transform: rotate(12deg) translateY(-5px);
+  }
+  .comment-item:nth-child(4) {
+    transform: rotate(-11deg) translateY(12px);
+  }
+  .comment-item:nth-child(5) {
+    transform: rotate(7deg) translateY(-8px);
+  }
+  .comment-item:nth-child(6) {
+    transform: rotate(-2deg) translateY(5px);
+  }
+  .comment-item:nth-child(7) {
+    transform: rotate(-6deg) translateY(-12px);
+  }
+  .comment-item:hover {
+    transform: scale(1.05) rotate(0deg);
+    transition: transform 0.3s ease;
+  }
 }
+
 
 /* При ширині від 1080px – розширення сітки до 3 колонок та збільшення розмірів */
 @media screen and (min-width: 1080px) {
@@ -177,7 +188,7 @@ left: -70px;
   /* Коментарі – 3 колонки */
   .comments-container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
   }
 
   .comment-item {

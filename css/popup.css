@@ -189,7 +189,7 @@
       row-gap: 18px;
       column-gap: 36px;
       text-wrap: balance;
-    
+    justify-content: center;
     }
 }
 
@@ -197,7 +197,7 @@
 /* Десктопи (від 1080px) */
 @media screen and (min-width: 1080px) {
   .popup-content {
-    padding: 40px;
+    padding: 40px 100px;
     width: 100%;
   }
 

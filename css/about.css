@@ -87,6 +87,13 @@
   background: #fff;
 }
 
+
+.about-text {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-wrap: balance;
+}
 /* ===========================================
    Супутні стилі для “shape-rectangle-size7” та ін.
    (пропорції розраховані від 512px)
